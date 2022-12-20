@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.round = exports.remainder = exports.randomNumber = exports.randomValue = exports.root = exports.pow = exports.division = exports.multiply = exports.sub = exports.add = exports.E = exports.PI = exports.isNum = void 0;
+exports.average = exports.round = exports.remainder = exports.randomNumber = exports.randomValue = exports.root = exports.pow = exports.division = exports.multiply = exports.sub = exports.add = exports.E = exports.PI = exports.isNum = void 0;
 /**
  * Returns false if the value is NaN
  */
@@ -116,3 +116,16 @@ function round(num) {
     return Math.round(eval(`${num}*1`));
 }
 exports.round = round;
+/**
+ * Returns the average of the data
+ */
+function average(...nums) {
+    if (!nums[1])
+        throw new Error('Please, establish at least two numbers!');
+    const num1 = nums.join('+');
+    const num = eval(num1);
+    const result = eval(`${num}/${nums.length}`);
+    return result;
+}
+exports.average = average;
+//# sourceMappingURL=index.js.map

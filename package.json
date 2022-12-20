@@ -1,6 +1,6 @@
 {
   "name": "math-basics",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A package that adds util functions!",
   "main": "src/index.js",
   "typings": "types/index.d.ts",

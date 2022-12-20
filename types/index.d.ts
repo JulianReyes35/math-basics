@@ -51,3 +51,7 @@ export declare function remainder(...nums: string[] | number[]): any;
  * Returns the round of the number
  */
 export function round (num: string | number): number;
+/**
+ * Returns the average of the data
+ */
+export function average(...nums: string[] | number[]): number;
