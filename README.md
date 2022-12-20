@@ -15,14 +15,15 @@ pnpm add math-basics@latest
 ## Example
 
 ```js
-const math = require("math-basics");
-console.log(math.add(3, 2)); // Output: 5
-console.log(math.sub(6, 3)); // Output: 3
-console.log(math.multiply(7,6)) // Output: 42
-console.log(math.division(27,9)) // Output: 3
-console.log(math.remainder(70, 10)) // Output: 0
-console.log(math.pow(3,2)) // Output: 9
-console.log(math.root(4,256)) // Output: 4
-console.log(math.randomArray([ 'one', 'two', 'three' ])) // 'one'
+const math = require('math-basics');
+console.log(math.add(3, '2')); // Output: 5
+console.log(math.sub(6, '3')); // Output: 3
+console.log(math.multiply(7, '6')) // Output: 42
+console.log(math.division(27, '9')) // Output: 3
+console.log(math.remainder(70, '10')) // Output: 0
+console.log(math.pow(3, '2')) // Output: 9
+console.log(math.root(4, '256')) // Output: 4
+console.log(math.randomArray([ 'one', 'two', 'three' ])) // Output: 'one'
 console.log(math.randomNumber()) // Output: 47
+console.log(math.average(9.1, '10', 27, '8.9', 90.5, '3.4')) // Output: 24.81666666...
 ```
